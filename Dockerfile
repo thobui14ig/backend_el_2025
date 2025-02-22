@@ -1,6 +1,6 @@
 # Base image
 FROM node:lts
-
+ENV NODE_OPTIONS=--max-old-space-size=4096
 # Create app directory
 WORKDIR /usr/src/app
 
@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Install app dependencies
-RUN npm install
+RUN npm install --force
 
 # Bundle app source
 COPY . .

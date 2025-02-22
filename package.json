@@ -19,7 +19,6 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@liaoliaots/nestjs-redis": "^9.0.5",
     "@nestjs-modules/mailer": "^1.10.3",
     "@nestjs/cache-manager": "^2.1.1",
     "@nestjs/common": "^10.0.0",
