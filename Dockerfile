@@ -1,6 +1,6 @@
 # Base image
 FROM node:lts
-
+ENV NODE_OPTIONS=--max-old-space-size=4096
 # Create app directory
 WORKDIR /usr/src/app
 
