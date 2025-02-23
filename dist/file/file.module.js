@@ -17,7 +17,7 @@ const file_service_1 = require("./file.service");
 const variable_module_1 = require("../variable/variable.module");
 const multerOptions = {
     storage: multer.diskStorage({
-        destination: './../../uploads',
+        destination: './../uploads',
         filename: (req, file, cb) => {
             const randomName = Array(32)
                 .fill(null)
